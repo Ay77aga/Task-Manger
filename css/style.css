@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../bg.jpg");
+  background-size: cover;
+}
+
+.form {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #3700FF91;
+  padding: 10px;
+  margin: auto;
+}
+
+input {
+  box-shadow: 0 0 3px 3px #47DCFFE6;
+  border-radius: 2rem;
+  padding: 5px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border: 2px solid black;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #6B6F70;
+
+}
+input::placeholder{
+  color: #E66AFF;
+}
+.form input:first-child {
+  width: 80%;
+}
+
+.form input:last-child {
+  width: 18%;
+  color: white;
+  font-size: 18px;
+  background: coral;
+}
+
+.output {
+  background: #9041DD99;
+  margin: 70px auto;
+  width: 95%;
+  display: flex;
+  border-radius: 1.3rem;
+  flex-direction: column;
+  overflow: scroll;
+  height: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+  border-radius: 1.3rem;
+  align-items: center;
+  border: 2px solid #fff;
+  margin: 10px auto;
+  width: 99%;
+  color: #fff;
+  position: relative;
+}
+
+.task p {
+  width: 65%;
+  border-right: 1px solid lime;
+  padding: 5px;
+  overflow: scroll;
+}
+
+.done {
+  background: #49ACDF;
+  position: relative;
+}
+
+
+.task .del {
+  padding: 5px;
+  color: red;
+  font-size: 30px;
+  font-weight: bolder;
+  background: lightseagreen;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+}
+
+
+.done:after {
+  content: "Done";
+  color: orange;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  text-shadow: 0 0 5px #000;
+  transform: translateX(-50%);
+}
+
+.done:before {
+  background-image: url("../check-circle-solid.svg");
+  content: "";
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: red;
+  border: 3px solid #000;
+}
+.show {
+  padding: 10px;
+  height: 75vh;
+}
+.open{
+  background-image: url("../eye-solid.svg");
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+}
