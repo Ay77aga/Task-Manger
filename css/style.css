@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("../bg.jpg");
+  background-image: url("../imgs/bg.jpg");
   background-size: cover;
 }
 
@@ -110,7 +110,7 @@ input::placeholder{
 }
 
 .done:before {
-  background-image: url("../check-circle-solid.svg");
+  background-image: url("../imgs/check-circle-solid.svg");
   content: "";
   height: 25px;
   width: 25px;
@@ -126,7 +126,7 @@ input::placeholder{
   height: 75vh;
 }
 .open{
-  background-image: url("../eye-solid.svg");
+  background-image: url("../imgs/eye-solid.svg");
   height: 60px;
   width: 60px;
   position: absolute;
