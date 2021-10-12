@@ -29,7 +29,7 @@ output.addEventListener('click', (e) => {
     status(e.target.getAttribute('data'));
     e.target.classList.toggle('done');
   }
-});
+}); 
 
 function addTasks(txt) {
   // task data
