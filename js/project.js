@@ -12,11 +12,12 @@ if (localStorage.tasks) {
 getData();
 
 // Add tasks
-submit.onclick = function() {
+submit.onclick = function(e) {
   if (input.value !== '') {
     addTasks(input.value);
     input.value = '';
   }
+  e.preventDefault()
 }
 // Delete btn
 output.addEventListener('click', (e) => {
@@ -33,7 +34,7 @@ output.addEventListener('click', (e) => {
 function addTasks(txt) {
   // task data
   const task = {
-    id: Date.now(),
+    id: Date.now().toString(36),
     text: txt,
     complete: false,
   }
@@ -96,6 +97,6 @@ function status(taskid) {
 
 let open = document.querySelector('.open');
 
-open.onclick = function (){
+open.onclick = function() {
   output.classList.toggle('show');
 }
